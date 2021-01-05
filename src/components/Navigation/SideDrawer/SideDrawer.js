@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Transition from '../../../Transition';
 import Backdrop from '../../UI/Backdrop/Backdrop';
 
 const closedClasses = 'transform -translate-x-full transition ease-in duration-400';
@@ -10,7 +11,17 @@ const generalClasses =
 const SideDrawer = (props) => (
   <>
     <Backdrop show={props.show} clicked={props.closed} />
-    <div className={[generalClasses, props.show ? openedClasses : closedClasses].join(' ')}>{props.children}</div>
+    <Transition
+      show={props.show}
+      enter="transition ease-in-out duration-900 transform"
+      enterFrom="-translate-x-full"
+      enterTo="translate-x-0"
+      leave="transition ease-in-out duration-900 transform"
+      leaveFrom="translate-x-0"
+      leaveTo="-translate-x-full"
+    >
+      <div className={[generalClasses, props.show ? openedClasses : closedClasses].join(' ')}>{props.children}</div>
+    </Transition>
   </>
 );
 
