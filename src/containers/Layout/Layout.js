@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
-import Navbar from "../../components/Navigation/Navbar/Navbar";
+import React, { Component } from 'react';
+import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
+import Navbar from '../../components/Navigation/Navbar/Navbar';
 
 class Layout extends Component {
   state = {
@@ -20,14 +20,8 @@ class Layout extends Component {
   render() {
     return (
       <div className="h-screen">
-        <Navbar
-          historyClicked={this.toggleDrawerHandler}
-          favoriteClicked={this.toggleDrawerHandler}
-        />
-        <SideDrawer
-          show={this.state.showSideDrawer}
-          closed={this.closeDrawerHandler}
-        >
+        <Navbar historyClicked={this.toggleDrawerHandler} favoriteClicked={this.toggleDrawerHandler} />
+        <SideDrawer show={this.state.showSideDrawer} closed={this.closeDrawerHandler}>
           SideDrawer
         </SideDrawer>
         <h1>Hello World!</h1>

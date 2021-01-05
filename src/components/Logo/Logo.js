@@ -1,5 +1,8 @@
-import React from "react";
+import React from 'react';
 
-const logo = (props) => <h1>Youtube Library</h1>;
+const Logo = () => (
+  // props: to be defined
+  <h1>Youtube Library</h1>
+);
 
-export default logo;
+export default Logo;
