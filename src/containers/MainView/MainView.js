@@ -1,16 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 class MainView extends Component {
-    state = {
+  state = {};
 
-    };
-
-
-    render() {
-        return (
-            <></>
-        );
-    }
+  render() {
+    return <></>;
+  }
 }
 
 export default MainView;
