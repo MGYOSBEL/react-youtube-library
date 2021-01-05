@@ -8,6 +8,29 @@ class Layout extends Component {
     showSideDrawer: false,
   };
 
+<<<<<<< HEAD
+    toggleDrawerHandler = () => {
+        this.setState((prevState) => ({
+            showSideDrawer: !prevState.showSideDrawer
+        }));
+    }
+    closeDrawerHandler = () => {
+        this.setState({
+            showSideDrawer: false
+        });
+    }
+    render() {
+        return (
+            <div className="h-screen bg-gray-700">
+            <Navbar historyClicked={this.toggleDrawerHandler} favoriteClicked={this.toggleDrawerHandler}/>
+            <SideDrawer show={this.state.showSideDrawer} closed={this.closeDrawerHandler}> 
+                SideDrawer 
+            </SideDrawer>
+            <MainView />
+            </div>
+        );
+    }
+=======
   toggleDrawerHandler = () => {
     this.setState((prevState) => ({
       showSideDrawer: !prevState.showSideDrawer,
@@ -20,15 +43,16 @@ class Layout extends Component {
   };
   render() {
     return (
-      <div className="h-screen bg-gray-700">
+      <div className="h-screen">
         <Navbar historyClicked={this.toggleDrawerHandler} favoriteClicked={this.toggleDrawerHandler} />
         <SideDrawer show={this.state.showSideDrawer} closed={this.closeDrawerHandler}>
           SideDrawer
         </SideDrawer>
-        <MainView />
+        <h1>Hello World!</h1>
       </div>
     );
   }
+>>>>>>> aedcdfecf3e84f18d726354ec445f478c932976c
 }
 
 export default Layout;

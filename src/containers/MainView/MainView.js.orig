@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+import React, {Component} from 'react';
+import Video from '../Video/Video';
+=======
+import React, { Component } from 'react';
+>>>>>>> aedcdfecf3e84f18d726354ec445f478c932976c
+
+class MainView extends Component {
+  state = {};
+
+<<<<<<< HEAD
+    };
+
+
+    render() {
+        return (
+            <div className="w-4/6 m-auto">
+                <Video  />
+            </div>
+        );
+    }
+=======
+  render() {
+    return <></>;
+  }
+>>>>>>> aedcdfecf3e84f18d726354ec445f478c932976c
+}
+
+export default MainView;

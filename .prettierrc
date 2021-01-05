@@ -9,5 +9,6 @@
   "jsxBracketSameLine": false,
   "jsBracketSameLine": false,
   "arrowParens": "always",
-  "requirePragma": false
+  "requirePragma": false,
+  "endOfLine": "auto"
 }

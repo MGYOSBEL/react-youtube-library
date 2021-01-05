@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
-import InputUrl from "../../components/UI/InputUrl/InputUrl";
-import FavoriteVideoToggler from "../../components/FavoriteVideoToggler/FavoriteVideoToggler";
+import React, { Component } from 'react';
+import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
+import InputUrl from '../../components/UI/InputUrl/InputUrl';
+import FavoriteVideoToggler from '../../components/FavoriteVideoToggler/FavoriteVideoToggler';
 
 class Video extends Component {
   state = {};
