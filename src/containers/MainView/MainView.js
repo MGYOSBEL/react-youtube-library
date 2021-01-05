@@ -2,10 +2,7 @@ import React, {Component} from 'react';
 import Video from '../Video/Video';
 
 class MainView extends Component {
-    state = {
-
-    };
-
+  state = {};
 
     render() {
         return (

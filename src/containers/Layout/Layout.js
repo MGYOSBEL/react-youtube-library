@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 import Navbar from '../../components/Navigation/Navbar/Navbar';
 import MainView from '../MainView/MainView';
 
 class Layout extends Component {
-    state = {
-        showSideDrawer: false
-    };
+  state = {
+    showSideDrawer: false,
+  };
 
     toggleDrawerHandler = () => {
         this.setState((prevState) => ({
