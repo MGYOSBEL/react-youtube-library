@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Video from '../Video/Video';
 
 class MainView extends Component {
     state = {
@@ -8,7 +9,9 @@ class MainView extends Component {
 
     render() {
         return (
-            <></>
+            <div className="w-4/6 m-auto">
+                <Video  />
+            </div>
         );
     }
 }
